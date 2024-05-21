@@ -1,0 +1,58 @@
+body {
+  background-color: #e6ecf0;
+}
+
+.sidebar {
+  background-color: white;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.sidebar .nav-link {
+  color: #1da1f2;
+  font-size: 1.25rem;
+  padding: 10px 0;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+}
+
+.main-content {
+  background-color: white;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.tweet-box {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.tweets .tweet {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.right-sidebar {
+  background-color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.trends,
+.who-to-follow {
+  border-bottom: 1px solid #ddd;
+}
+
+.trends h5,
+.who-to-follow h5 {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 0;
+}

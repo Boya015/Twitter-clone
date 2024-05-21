@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Replica</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-list"></i> Lists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i> More</a></li>
+                </ul>
+                <button class="btn btn-primary btn-block mt-4">Tweet</button>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-6 main-content">
+                <div class="tweet-box">
+                    <input type="text" class="form-control" placeholder="What's happening?">
+                </div>
+                <div class="tweets">
+                    <div class="tweet">
+                        <p><strong>Brie @Brian_ComedyFun</strong></p>
+                        <p>Doing standup comedy at 9p. Come see! tix: <a href="#">funnycomedy.tix</a></p>
+                    </div>
+                    <div class="tweet">
+                        <p><strong>Mariel</strong></p>
+                        <p>Vacation is going great!</p>
+                        <img src="https://via.placeholder.com/500x300" alt="Sunset" class="img-fluid">
+                    </div>
+                    <div class="tweet">
+                        <p><strong>andre</strong></p>
+                        <p>How many lemons do I need to make lemonade?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Sidebar -->
+            <div class="col-md-4 right-sidebar">
+                <div class="trends">
+                    <h5>Trends for you</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">#LearningJavaScript</li>
+                        <li class="list-group-item">#WorldNews</li>
+                        <li class="list-group-item">#BreakingNews</li>
+                        <li class="list-group-item">#TechUpdates</li>
+                    </ul>
+                </div>
+                <div class="who-to-follow mt-4">
+                    <h5>Who to follow</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Person 1</li>
+                        <li class="list-group-item">Person 2</li>
+                        <li class="list-group-item">Person 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

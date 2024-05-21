@@ -15,6 +15,20 @@ body {
   padding: 10px 0;
 }
 
+/* Hover effect for nav-items */
+.nav-item .nav-link:hover {
+  background-color: #e8f5fd;
+  color: #1da1f2;
+  
+}
+
+/* Hover effect for profile actions */
+.profile-action:hover {
+  background-color: #e8f5fd;
+  color: #1da1f2;
+  border-radius: 25px;
+}
+
 .sidebar .nav-link i {
   margin-right: 10px;
 }

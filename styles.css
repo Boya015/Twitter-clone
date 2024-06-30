@@ -33,6 +33,11 @@ body {
   margin-right: 10px;
 }
 
+strong {
+  color: rgba(128, 116, 116, 0.932);
+  font-size: 0.78rem;
+}
+
 .main-content {
   background-color: white;
   border-right: 1px solid #ddd;

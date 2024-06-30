@@ -41,13 +41,25 @@ body {
 }
 
 .tweet-box {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 15px solid #ddd;
   padding: 20px;
 }
 
 .tweets .tweet {
   padding: 20px;
   border-bottom: 1px solid #ddd;
+}
+
+.tweet-action {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.tweet-action a {
+  color: #666;
+}
+.tweet-action a:hover {
+  color: #1da1f2;
 }
 
 .right-sidebar {

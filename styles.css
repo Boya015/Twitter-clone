@@ -10,7 +10,7 @@ body {
 }
 
 .sidebar .nav-link {
-  color: #1da1f2;
+  color: black;
   font-size: 1.25rem;
   padding: 10px 0;
 }
@@ -38,6 +38,12 @@ strong {
   font-size: 0.78rem;
 }
 
+picture > img {
+  height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
 .main-content {
   background-color: white;
   border-right: 1px solid #ddd;
@@ -49,10 +55,25 @@ strong {
   border-bottom: 15px solid #ddd;
   padding: 20px;
 }
+.tweet {
+  display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
 
 .tweets .tweet {
   padding: 20px;
   border-bottom: 1px solid #ddd;
+}
+
+.tweet picture {
+  margin-right: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .tweet-action {
@@ -73,14 +94,20 @@ strong {
   padding: 20px;
 }
 
+.trend-container {
+  color: black;
+}
+
 .trends,
 .who-to-follow {
   border-bottom: 1px solid #ddd;
+  
 }
 
 .trends h5,
 .who-to-follow h5 {
   margin-bottom: 20px;
+  
 }
 
 .list-group-item {

@@ -19,7 +19,6 @@
       <div class="row">
         <!-- Sidebar -->
         <div class="col-md-2 sidebar">
-          <!-- Twitter Logo -->
           <div class="logo text-left pl-3 my-3">
             <img
               src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png"
@@ -74,22 +73,40 @@
         </div>
         <!-- Main Content -->
         <div class="col-md-6 main-content">
-          <div class="Home-header mt-4">
-            <h4>Home</h4>
+          <div
+            class="Home-header d-flex justify-content-between align-items-center mt-4 mb-3"
+          >
+            <h4 class="mb-0">Home</h4>
+            <a href="#" class="star-icon"><i class="far fa-star"></i></a>
           </div>
-          <div class="tweet-box">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="What's happening?"
-            />
+          <div class="tweet-box p-3 mb-3 bg-white rounded">
+            <div class="d-flex align-items-start">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Profile pic"
+                class="profile-pic mr-3"
+              />
+              <textarea
+                class="form-control tweet-input"
+                placeholder="What's happening?"
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div class="tweet-icons">
+                <a href="#"><i class="far fa-image"></i></a>
+                <a href="#"><i class="far fa-chart-bar"></i></a>
+                <a href="#"><i class="far fa-smile"></i></a>
+                <a href="#"><i class="far fa-calendar-alt"></i></a>
+              </div>
+              <button class="btn btn-primary tweet-button">Tweet</button>
+            </div>
           </div>
           <div class="tweets">
             <div class="tweet">
               <picture>
                 <img
                   alt="profile pic"
-                  src="./assets/images/Random pic 2.jpeg"
+                  src="assets/images/Random pic 2.jpeg"
                   class="profile-pic"
                 />
               </picture>
@@ -111,12 +128,12 @@
               <picture>
                 <img
                   alt="profile pic"
-                  src="assets\images\Random pic.jpeg"
+                  src="assets/images/Random pic.jpeg"
                   class="profile-pic"
                 />
               </picture>
               <div class="tweet-content">
-                <p>Mariel<strong>@Marry_est-82</strong></p>
+                <p>Mariel<strong> @Marry_est-82</strong></p>
                 <p>Vacation is going great!</p>
                 <img
                   src="https://via.placeholder.com/500x300"
@@ -135,12 +152,12 @@
               <picture>
                 <img
                   alt="profile pic"
-                  src="assets\images\random pic 3.jpg"
+                  src="assets/images/random pic 3.jpg"
                   class="profile-pic"
                 />
               </picture>
               <div class="tweet-content">
-                <p>andre Jackson<strong>@aj_jackson</strong></p>
+                <p>andre Jackson<strong> @aj_jackson</strong></p>
                 <p>How many lemons do I need to make lemonade?</p>
                 <div class="tweet-action">
                   <a href="#"><i class="far fa-comment"></i></a>
@@ -154,39 +171,98 @@
         </div>
         <!-- Right Sidebar -->
         <div class="col-md-4 right-sidebar">
-          <div class="trend-container">
+          <div class="trend-container trends-box">
             <div class="trends">
               <h5>Trends for you</h5>
               <ul class="list-group">
-                <li class="list-group-item">#LearningJavaScript</li>
-                <li class="list-group-item">#WorldNews</li>
-                <li class="list-group-item">#BreakingNews</li>
-                <li class="list-group-item">#TechUpdates</li>
+                <li class="list-group-item">
+                  <small class="text-muted">Trending worldwide</small><br />
+                  <strong>#LearningJavaScript</strong><br />
+                  <small>75k Tweets</small>
+                </li>
+                <li class="list-group-item">
+                  <small class="text-muted">Trending worldwide</small><br />
+                  <strong>#WorldNews</strong><br />
+                  <small>150k Tweets</small>
+                </li>
+                <li class="list-group-item">
+                  <small class="text-muted">Trending worldwide</small><br />
+                  <strong>#BreakingNews</strong><br />
+                  <small>125k Tweets</small>
+                </li>
+                <li class="list-group-item">
+                  <small class="text-muted">Trending worldwide</small><br />
+                  <strong>#TechUpdates</strong><br />
+                  <small>90k Tweets</small>
+                </li>
               </ul>
             </div>
-            <div class="who-to-follow mt-4">
-              <h5>Who to follow</h5>
-              <ul class="list-group">
-                <li class="list-group-item">Person 1</li>
-                <li class="list-group-item">Person 2</li>
-                <li class="list-group-item">Person 3</li>
-              </ul>
-            </div>
+          </div>
+          <div class="who-to-follow mt-4">
+            <h5>Who to follow</h5>
+            <ul class="list-group">
+              <li class="list-group-item d-flex align-items-center">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="Profile pic"
+                  class="profile-pic mr-3"
+                />
+                <div>
+                  <strong>Person 1</strong><br />
+                  <small>@person1</small>
+                </div>
+                <button class="btn btn-outline-primary btn-sm ml-auto">
+                  Follow
+                </button>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="Profile pic"
+                  class="profile-pic mr-3"
+                />
+                <div>
+                  <strong>Person 2</strong><br />
+                  <small>@person2</small>
+                </div>
+                <button class="btn btn-outline-primary btn-sm ml-auto">
+                  Follow
+                </button>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="Profile pic"
+                  class="profile-pic mr-3"
+                />
+                <div>
+                  <strong>Person 3</strong><br />
+                  <small>@person3</small>
+                </div>
+                <button class="btn btn-outline-primary btn-sm ml-auto">
+                  Follow
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <!-- Profile Actions at the Foot of the Page -->
       <div class="row mt-4">
         <div class="col-md-12 profile-actions text-center py-3">
-          <a href="#" class="mr-3"><i class="fas fa-cog"></i> Settings</a>
-          <a href="#" class="mr-3"
-            ><i class="fas fa-question-circle"></i> Help</a
-          >
-          <a href="#" class="mr-3"
-            ><i class="fas fa-sign-out-alt"></i> Logout</a
-          >
+          <a href="#"><i class="fas fa-cog"></i> Settings</a>
+          <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+          <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
       </div>
+    </div>
+
+    <div class="fixed-footer">
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="far fa-bell"></i></a>
+      <a href="#"><i class="far fa-envelope"></i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
